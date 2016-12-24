@@ -28,5 +28,6 @@ install:
     - sudo apt-get update
     - sudo apt-get install qt57base qt57script qt57declarative qt57tools qt57x11extras qt57svg
 
+
 script:
     - python3 ./run.py
