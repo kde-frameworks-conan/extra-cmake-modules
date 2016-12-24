@@ -18,6 +18,7 @@ env:
   - CONAN_UPLOAD=1
   - CONAN_GCC_VERSIONS="4.8,4.9,5,6"
   - CONAN_USERNAME=russelltg
+  - CONAN_REFERENCE=extra-cmake-modules/5.29.0
   - secure: hzyNu/UVWDpEKA266X6gTsWNzcduVrL+CGTXOES4rwNHSit3Zdxv64cFhVGqFuNaMowhwK0P9lY5NVzFs7KN9jh5W1cYogx+D4Unk8UUM6OtrU/zNIoJnL8tdLCW5/d3Tf2qkHU2ouQWZfpkdXjIc+nz16g2OKFYw6PX72NzHT9acA3UixSPAnfjOSP1jpj4wBz8/oxOCpGbDadW7TDaf0zQbhV7nvpFq42BVQhomoDDcbkpK/Jv+ack08v2WAvC79mFRcW5kVuiyEH6fZfPOfiILbU2zul/8+RZ3XDGiAnbSrDzh4corxL19tSy5C02DwN9GdoYvf9taHsKFmMKUoq2RTm4Lgou2BnsTfLpKEypcut/RH6FJqRgFYUn4uIhQHaK/QmI8fyb04axm6Yv8sn8/O0pvY/4ir5hrb7FZ9JSjgy0ac24/uoetgCnnhfdJlv6iwzlj3B70TntCB0yVjB2FDTTcBVuvxJWAUKgFbuTa3Bpw14RbWk1B3ziFtQdXOl5el/3blQgdyx9arVpdKQWZ/XnQwxsq8vhG7qRSEHZQQ5Sw4MDUaMRWkRrpipfp2MdkknhSlxrCbP2nerzBRHGY6v9Jm+bdkGNlgp/km0cZOHqKr1C9UmwG1yEFje7dsWxuX7iPBaOmTW3z3Qs8Joz7GrcFpA3Nffpz35GHBI=
 install:
 - pip3 install conan conan_package_tools
