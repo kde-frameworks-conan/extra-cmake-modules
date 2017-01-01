@@ -37,19 +37,13 @@ class className(ConanFile):
         os.unlink(zip_name)
     
     def build(self):
-        cm = CMake(self.settings)
         
         print(self.folder_name)
-        self.run('cmake -DCMAKE_INSTALL_PREFIX="%s" %s %s' % 
+        self.run('cmake -DCMAKE_INSTALL_PREFIX="%s" %s ' % 
                  (os.path.join(self.conanfile_directory, "install"), 
-                  self.conanfile_directory + "/" + self.folder_name, 
-                  cm.command_line))
-        if platform.os == "Windows":
-            self.run("cmake --build . %s" % cm.build_config)
-        else:
-            self.run("make -j %d" % multiprocessing.cpu_count())
+                  self.conanfile_directory + "/" + self.folder_name))
         
-        self.run("cmake --build . %s --target install" % cm.build_config)
+        self.run("cmake --build . --target install")
         
     def package(self):
         print("packaging!")
