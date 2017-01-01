@@ -7,15 +7,10 @@ framework = "extra-cmake-modules"
 version = "5.29.0"
 shortversion = "5.29"
 
-className = framework + "Conan"
-
 class className(ConanFile):
     name = framework
     version = version
     description = "KDE extra cmake modules"
-    
-    options = {}
-    default_options = {}
     
     url = "https://github.com/kde-frameworks-conan/%s" % name
     license = "LGPLv2"

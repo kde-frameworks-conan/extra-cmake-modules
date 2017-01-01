@@ -5,8 +5,8 @@ import platform
 
 
 if __name__ == "__main__":
-    builder = ConanMultiPackager(visual_runtimes=["MT", "MD"])
+    builder = ConanMultiPackager()
     
-    builder.builds.append({})
+    builder.add()
     
     builder.run()
