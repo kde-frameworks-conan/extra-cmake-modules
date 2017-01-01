@@ -12,8 +12,7 @@ className = framework + "Conan"
 class className(ConanFile):
     name = framework
     version = version
-    description = "KDE Config framework"
-    settings = "os", "arch", "compiler", "build_type"
+    description = "KDE extra cmake modules"
     
     options = {}
     default_options = {}
